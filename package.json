@@ -1,9 +1,10 @@
 {
   "name": "test-api",
   "version": "1.0.0",
+  "description": "test project",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --watch src  --exec ts-node src/app.ts",
+    "start": "ODE_ENV=production node ./build/app.js",
     "migrate": "migrate=true npm start",
     "build:prod": "tsc",
     "prod:server": "NODE_ENV=production node ./build/app.js",
@@ -48,5 +49,8 @@
     "ts-node": "^6.2.0",
     "tslint": "5.10.0",
     "typescript": "^2.9.2"
+  },
+  "engines": {
+    "node": "11.x"
   }
 }
