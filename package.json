@@ -4,7 +4,7 @@
   "description": "test project",
   "license": "MIT",
   "scripts": {
-    "start": "ODE_ENV=production node ./build/app.js",
+    "start": "NODE_ENV=production node ./build/app.js",
     "migrate": "migrate=true npm start",
     "build:prod": "tsc",
     "prod:server": "NODE_ENV=production node ./build/app.js",
